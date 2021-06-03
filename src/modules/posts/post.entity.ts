@@ -1,6 +1,7 @@
-import { BelongsTo, Column, DataType, ForeignKey, Model } from "sequelize-typescript";
+import { BelongsTo, Column, DataType, ForeignKey, Model, Table } from "sequelize-typescript";
 import { User } from "../users/user.entity";
 
+@Table
 export class Post extends Model {
     @Column({
         type: DataType.STRING,
